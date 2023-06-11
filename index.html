@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="py-2 shadow-sm bg-white">
+      <div class="container flex items-center space-x-40 justify-center">
+        <!-- logo -->
+        <a href="#">
+          <img  class="h-5" src="images/logo.svg" class="w-32" />
+        </a>
+        <!-- searchbar -->
+        <div class="w-full max-w-md relative flex border-2xl">
+          <span class="absolute left-4 top-3 text-lg text-gray-400">
+            <i class="fa fa-search"></i>
+          </span>
+          <input
+            type="text"
+            class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-3xl focus:outline-none"
+            placeholder="search"
+          />
+          <button
+            class="bg-primary border border-primary text-white px-8 rounded-r-3xl hover:bg-transparent hover:text-primary transition"
+          >
+            search
+          </button>
+        </div>
+        <!-- icons -->
+        <div class="flex items-center space-x-10">
+          <a href="#" class="text-center text-gray-700 hover:text-primary transition relative"
+          >
+            <div class="text-3xl">
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wish List</div>
+            <span
+              class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs"
+              >8</span
+            >
+          </a>
+          <a href="#" class="text-center text-gray-700 hover:text-primary transition relative"
+          >
+            <div class="text-3xl">
+              <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="absolute left-4 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs"
+              >8</span
+            >
+          </a>
+          <a href="#" class="text-center text-gray-700 hover:text-primary transition relative"
+          >
+            <div class="text-3xl">
+              <i class="fa fa-user"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- NavBar  -->
+    <nav class="bg-gray-800 w-full" >
+      <div class="container flex items-center justify-center">
+        <!-- all category -->
+        <div class="px-8 py-4 bg-primary flex items-center cursor-pointer">
+          <span class="text-white">
+            <i class="fa fa-bars"></i>
+          </span>
+          <span class="capitalize ml-2 text-white">All Categories</span>
+        </div>
+
+        <!-- all category end -->
+
+        <!-- navbar links -->
+        <div class="flex items-center justify-between flex-grow pl-12">
+          <div class="flex items-center space-x-6 capitalize">
+            <a href="#" class="text-gray-100 hover:text-white transition">Home</a>
+            <a href="#" class="text-gray-100 hover:text-white transition">Shop</a>
+            <a href="#" class="text-gray-100 hover:text-white transition">About Us</a>
+            <a href="#" class="text-gray-100 hover:text-white transition">Contact Us</a>
+
+          </div>
+          <!-- <div class="flex items-center space-x-3 justify-end"> -->
+            <a href="#" class="text-gray-100 hover:text-white transition">Login/Register</a>
+            <!-- <a href="#" class="text-gray-100 hover:text-white transition">Home</a> -->
+
+          <!-- </div> -->
+
+        </div>
+
+      </div>
+
+    </nav>
+  </body>
+</html>
