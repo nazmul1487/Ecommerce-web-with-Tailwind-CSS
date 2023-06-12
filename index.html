@@ -74,14 +74,33 @@
     <!-- header end -->
 
     <!-- NavBar  -->
-    <nav class="bg-gray-800 w-full" >
-      <div class="container flex items-center justify-center">
+    <nav class="bg-gray-800 " >
+      <div class="container flex ">
         <!-- all category -->
-        <div class="px-8 py-4 bg-primary flex items-center cursor-pointer">
+        <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
           <span class="text-white">
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars"></i> 
           </span>
           <span class="capitalize ml-2 text-white">All Categories</span>
+          <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300">
+            <!-- Single category  -->
+              <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                <img src="images/icons/delivery-van.svg" class="w-5 h-5 object-contain">
+                <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+              </a>
+              <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                <img src="images/icons/delivery-van.svg" class="w-5 h-5 object-contain">
+                <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+              </a>
+              <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                <img src="images/icons/delivery-van.svg" class="w-5 h-5 object-contain">
+                <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+              </a>
+              <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
+                <img src="images/icons/delivery-van.svg" class="w-5 h-5 object-contain">
+                <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+              </a>
+          </div>
         </div>
 
         <!-- all category end -->
@@ -106,5 +125,52 @@
       </div>
 
     </nav>
+    <!-- navbar end  -->
+
+     <!-- banner section  -->
+
+     <div class="bg-cover bg-no-repeat bg-center py-32" style="background-image: url('images/banner-1.jpg');">
+      <div class="container">
+        <h1 class="text-6xl text-gray-800 font-medium mb-4 capitalize">
+          best collection for <br> home decoration
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Aliquam maximus metus a tortor faucibus, sit amet.</p>
+
+        <div class="mt-12">
+          <a href="" class="bg-primary border border-primary text-white px-8 py-3 font-medium rounded-md hover:bg-transparent hover:text-primary transition">Shop</a>
+        </div>
+
+      </div>
+
+     </div>
+     <!-- banner end  -->
+
+     <!-- feature section  -->
+     <div class="container py-16">
+        <div class="w-10/12 flex items-center justify-center mx-auto space-x-6">
+          <div class="border border-primary rounded-md px-3 py-3 flex justify-center items-center gap-5">
+            <img src="images/icons/delivery-van.svg" class="w-12 h-12 object-cover">
+            <div>
+              <h4 class="font-medium capitalize text-lg"> Free Shopping</h4>
+              <p class="text-black text-sm">Order over $300</p>
+            </div>  
+          </div>
+          <div class="border border-primary rounded-md px-3 py-3 flex justify-center items-center gap-5">
+            <img src="images/icons/money-back.svg" class="w-12 h-12 object-cover">
+            <div>
+              <h4 class="font-medium capitalize text-lg"> Money Return</h4>
+              <p class="text-black text-sm">30 days money return</p>
+            </div>  
+          </div>
+          <div class="border border-primary rounded-md px-3 py-3 flex justify-center items-center gap-5">
+            <img src="images/icons/service-hours.svg" class="w-12 h-12 object-cover">
+            <div>
+              <h4 class="font-medium capitalize text-lg"> 24/7 Support</h4>
+              <p class="text-black text-sm">Customer Support</p>
+            </div>  
+          </div>
+        </div>
+     </div>
+     <!-- feature section end  -->
   </body>
 </html>

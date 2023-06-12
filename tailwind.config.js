@@ -3,10 +3,10 @@ module.exports = {
   content: ["*"],
   theme: {
     screens: {
-      'sm': '640px',
+      'sm': '360px',
       // => @media (min-width: 640px) { ... }
 
-      'md': '768px',
+      'md': '640px',
       // => @media (min-width: 768px) { ... }
 
       'lg': '1024px',
@@ -30,6 +30,12 @@ module.exports = {
         'primary': '#FD3D57'
       }
     },
+  },
+  variants:{
+    extends:{
+      display : ['group-hover'],
+      visibility : ['group-hover']
+    }
   },
   plugins: [],
 };
